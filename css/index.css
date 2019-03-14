@@ -1,3 +1,635 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container{
+	width: 1200px;
+	margin: auto;
+}
+nav{
+	display: flex;
+	padding: 10px;
+	width: 100%;
+	justify-content: space-around;
+	align-items:center;
+	flex-wrap: wrap;
+}
+nav a{
+	padding:10px;
+	margin:10px;
+	text-decoration: none;
+	color: gray;
+	box-sizing: border-box;
+	text-align: : center;
+	font-size:16px;
+}
+
+nav img{
+	padding: 10px;
+	margin:10px;
+}
+
+.hero-section{
+	width:100%;
+	height: 550px;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #717171
+}
+
+.hero-section .copy{
+	width: 470px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.hero-section  h1{
+	font-size: 85px;
+	text-align: center;
+	width: 300px;
+}
+
+.hero-section img{
+	width:500px;
+	height: 500px;
+}
+
+.hero-section button{
+	width: 200px;
+	font-size:16px;
+	height: 50px;
+	background: white;
+	border-style: solid;
+	border-radius: : 2px;
+	border-color: black;
+}
+
+.intro{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.intro h2{
+	font-size: 24px;
+}
+.intro .features{
+	width: 50%;
+	margin: 20px;
+	padding: 20px;
+}
+.intro .about{
+	width: 50%;
+	margin:20px;
+	padding: 20px;
+}
+
+.middle-img{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	width: 100%
+}
 
 
+
+.details{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid #717171;
+}
+
+.details h2{
+	font-size: 24px;
+}
+
+.details .services{
+	width: 250px;
+	margin: 20px;
+	padding: 20px;
+}
+
+
+.details .products{
+	width: 250px;
+	margin: 20px;
+	padding: 20px;
+
+}
+.details .vision{
+	width: 250px;
+	margin: 20px;
+	padding: 20px;
+}
+footer{
+	width: 100%;
+	margin-left: 80px;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+span{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 10px;
+	align-self: center;
+}
+
+
+footer p{
+	line-height: 25px;
+}
+
+footer address{
+	padding-bottom: 20px;
+}
+
+footer h2{
+	font-size: 24px;
+}
+
+.Services-nav nav{
+	display: flex;
+	padding: 10px;
+	justify-content: space-around;
+	align-items:center;
+	flex-wrap: wrap;
+}
+.Services-nav a{
+	padding:5px;
+	margin:5px;
+	text-decoration: none;
+	color: gray;
+	box-sizing: border-box;
+	text-align: : center;
+	font-size:16px;
+}
+
+.Services-nav img{
+	padding: 5px;
+	margin:5px;
+}
+
+.Hero-section-services .services-header-img{
+	height: 300px;
+	width: 1300px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.Hero-section-services .hero-copy-services{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	width: 1300px;
+	margin-top: 20px;
+}
+.Hero-section-services .hero-copy-services h1{
+	font-size: 36px;
+}
+
+.Hero-section-services{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 450px;
+	border-bottom: 2px solid black;
+	margin: 25px;
+	padding: 25px;
+}
+
+.Design {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 300px;
+	margin: 10px;
+	padding: 10px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.Design .digital_design {
+	border: 1px solid black;
+	background-color: lightgray;
+	width: 600px;
+	height: 300px;
+}
+
+.Design .UX_UI{
+	border: 1px solid black;
+	background-color: lightgray;
+	width: 600px;
+	height: 300px;
+}
+
+.Design h2{
+	font-size: 24px;
+	margin: 10px;
+	padding:10px;
+}
+
+.Design p{
+	font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.Design button{
+	width: 150px;
+	font-size:16px;
+	height: 50px;
+	background: white;
+	border-style: solid;
+	border-radius: 2px;
+	border-color: black;
+	margin: 10px;
+	padding: 10px;
+
+}
+
+
+
+.Marketing {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 300px;
+	margin: 10px;
+	padding: 10px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+.Marketing .digital_marketing {
+	border: 1px solid black;
+	background-color: lightgray;
+	width: 600px;
+	height: 300px;
+}
+
+.Marketing .Web-dev{
+	border: 1px solid black;
+	background-color: lightgray;
+	width: 600px;
+	height: 300px;
+}
+
+.Marketing h2{
+	font-size: 24px;
+	margin: 10px;
+	padding:10px;
+}
+
+.Marketing p{
+	font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.Marketing button{
+	width: 150px;
+	font-size:16px;
+	height: 50px;
+	background: white;
+	border-style: solid;
+	border-radius: : 2px;
+	border-color: black;
+	margin: 10px;
+	padding: 10px;
+
+}
+
+
+.App-dev {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 300px;
+	margin: 10px;
+	padding: 10px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+.App-dev .ios {
+	border: 1px solid black;
+	background-color: lightgray;
+	width: 600px;
+	height: 300px;
+}
+
+.App-dev .android{
+	border: 1px solid black;
+	background-color: lightgray;
+	width: 600px;
+	height: 300px;
+}
+
+.App-dev h2{
+	font-size: 24px;
+	margin: 10px;
+	padding:10px;
+}
+
+.App-dev p{
+	font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.App-dev button{
+	width: 150px;
+	font-size:16px;
+	height: 50px;
+	background: white;
+	border-style: solid;
+	border-radius: : 2px;
+	border-color: black;
+	margin: 10px;
+	padding: 10px;
+
+}
+
+.Services-facts{
+	border-top: 2px solid black;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	height: 500px;
+}
+
+.Services-facts .facts{
+	margin-top: 40px;
+	width: 600px;
+}
+
+.Services-facts .services-info-img{
+	margin-top: 40px;
+	width: 600px;
+}
+.Services-facts h2{
+	font-size: 24px;
+}
+
+.Services-facts p{
+	font-size: 16px;
+}
+
+.footer {
+	display: flex;
+	height: 100px;
+	justify-content:center;
+	align-content: center;
+}
+.footer p{
+	color: lightgray;
+	width: 400px;
+	margin: 20px;
+	padding: 20px;
+}
+@media ( max-width:800px ) {
+	.container{
+	max-width: 800px;
+	}
+nav{
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+nav :nth-child(7) {order:1;}
+nav :nth-child(1) {order:2;}
+nav :nth-child(2) {order:3;}
+nav :nth-child(3) {order:4;}
+nav :nth-child(4) {order: 5;}
+nav :nth-child(5) {order:6;}
+nav :nth-child(6) {order:7;}
+
+nav img{
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+.hero-section img{
+	display: none;
+}
+.hero-section .copy{
+	margin-left: 5%;
+	padding-left: 5%;
+}
+
+.intro{
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.intro .features{
+	width: 75%;
+	margin-left: 2.5%;
+	padding-left: 0;
+}
+.intro .about{
+	width: 75%;
+	margin-left: 2.5%;
+	padding-left: 0;
+}
+.details{
+	margin-left: 0px;
+	padding-left: 0;
+}
+.details .services{
+	width: 75%;
+	margin-left: 2.5%;
+	padding-left: 0;
+}
+
+.details .products {
+	width:75%;
+	margin-left: 2.5%;
+	padding-left: 0;
+}
+.details .vision{
+	width: 75%;
+	margin-left: 2.5%;
+	padding-left: 0;
+}
+.middle-img{
+	width: 100%;
+}
+footer{
+	width: 75%;
+	margin-left: 2%;
+	padding-left: 0;
+}
+
+footer span{
+	width: 75%;
+	margin-left: 10%;
+	padding-left: 10%;
+}
+}
+@media( max-width: 500px) {
+	.container{
+		max-width: 500px;
+	}
+  nav{
+    flex-wrap: wrap;
+    flex-direction: column;
+		justify-content: center;
+		align-items: center;
+  }
+	nav :nth-child(7) {order:1;}
+	nav :nth-child(1) {order:2;}
+	nav :nth-child(2) {order:3;}
+	nav :nth-child(3) {order:4;}
+	nav :nth-child(4) {order: 5;}
+	nav :nth-child(5) {order:6;}
+	nav :nth-child(6) {order:7;}
+
+	nav a{
+		border-bottom: 1px solid gray;
+		text-align: center;
+		width: 100%;
+	}
+	nav img{
+		text-align: center;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+		margin: 2.5%;
+	}
+.hero-section img{
+	display: none;
+}
+
+.hero-section .copy{
+	width: 30%;
+	margin-left: 10%;
+	margin-top: 2%;
+	justify-content: center;
+}
+
+.intro{
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.intro .features{
+	width: 75%;
+	margin-left: 0px;
+	padding-left: 0;
+}
+.intro .about{
+	width: 75%;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.details{
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-left: 0px;
+	padding-left: 0;
+}
+.details .services{
+	width: 75%;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.details .products {
+	width:75%;
+	margin-left: 0;
+	padding-left: 0;
+}
+.details .vision{
+	width: 75%;
+	margin-left: 0;
+	padding-left: 0;
+}
+.middle-img {
+	width: 90%;
+	justify-content: center;
+	align-items: center;
+}
+footer{
+	width: 75%;
+	margin-left: 5%;
+	padding-left: 5%;
+}
+
+footer span{
+	width: 75%;
+	margin-left: 10%;
+	padding-left: 10%;
+}
+
+}
